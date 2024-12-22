@@ -1,0 +1,469 @@
+rank_structure:
+  617136488840429598: # TMW
+    - name: "Student"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 795698879227887678
+      foreground: "#f173ff"
+      effect: null
+      time_limit: 16000
+      decks:
+        - "jpdb1k"
+      deck_range:
+        - 1
+        - 300
+      score_limit: 25
+      max_missed: 10
+      command: "k!quiz jpdb1k(1-300) 25 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100"
+      no_timeout: true
+
+    - name: "Trainee"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 795698963494731806
+      foreground: "#f173ff"
+      effect: null
+      time_limit: 16000
+      decks:
+        - "jpdb1k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb1k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100"
+      no_timeout: false
+
+    - name: "Debut Idol"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 795699064409948210
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "jpdb2_5k"
+        - "jpdb5k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb2_5k+jpdb5k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "Major Idol"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 795699163144126474
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "jpdb5k"
+        - "jpdb10k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb5k+jpdb10k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "Prima Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "jpdb10k"
+        - "jpdb15k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb10k+jpdb15k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "Divine Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "jpdb15k"
+        - "jpdb20k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb15k+jpdb20k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "Eternal Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "jpdb20k"
+        - "jpdb25k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 10
+      command: "k!quiz jpdb20k+jpdb25k 50 hardcore nd mmq=10 dauq=1 font=5 atl=16 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "GN2"
+      require_role: null
+      combination_rank: false
+      font: null
+      font_size: null
+      rank_to_get: null
+      foreground: null
+      effect: null
+      time_limit: 30000
+      decks:
+        - "gn2"
+      deck_range: null
+      score_limit: 20
+      max_missed: 4
+      command: "k!quiz gn2 nd 20 mmq=4 atl=30"
+      no_timeout: false
+
+    - name: "GN1"
+      require_role: null
+      combination_rank: false
+      font: null
+      font_size: null
+      rank_to_get: null
+      foreground: null
+      effect: null
+      time_limit: 30000
+      decks:
+        - "gn1"
+      deck_range: null
+      score_limit: 20
+      max_missed: 4
+      command: "k!quiz gn1 nd 20 mmq=4 atl=30"
+      no_timeout: false
+
+    - name: "Prima Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN2", "Prima Idol Vocab"]
+      rank_to_get: 795699221365260359
+      command: null
+      no_timeout: false
+
+    - name: "Divine Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN1", "Divine Idol Vocab"]
+      rank_to_get: 1026918330566721576
+      command: null
+      no_timeout: false
+
+    - name: "Eternal Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN1", "Eternal Idol Vocab"]
+      rank_to_get: 1026918224266280960
+      command: null
+      no_timeout: false
+
+    - name: "Immortal Idol"
+      require_role: 1026918224266280960
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1310487640608342056
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "haado"
+        - "insane"
+        - "jpdb50k"
+      deck_range: null
+      score_limit: 50
+      max_missed: 9
+      command: "k!quiz haado+insane+jpdb50k 50 nd hardcore dauq=1 font=5 atl=16 mmq=9 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+    - name: "TMW Owner"
+      require_role: null
+      combination_rank: false
+      font: "Aoyagi Kouzan Gyousho"
+      font_size: 90
+      rank_to_get: 1314993571647979570
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n0"
+        - "cope"
+        - "kunyomi1kfull"
+        - "loli"
+        - "Myouji"
+        - "jpdefs"
+        - "places_full"
+      deck_range: null
+      score_limit: 50
+      max_missed: 9
+      command: "k!quiz n0+cope+kunyomi1kfull+loli+Myouji+jpdefs+places_full 50 nd hardcore dauq=1 font=7 atl=16 mmq=9 color=#f173ff size=90 effect=antiocr"
+      no_timeout: false
+
+  1297383002610995272: # Test_Guild
+    - name: "Student"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1297383002694746173
+      foreground: "#f173ff"
+      effect: null
+      time_limit: 16000
+      decks:
+        - "n5"
+      deck_range:
+        - 1
+        - 100
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n5(1-100) 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 atl=16"
+      no_timeout: true
+
+    - name: "Trainee"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1297383002694746174
+      foreground: "#f173ff"
+      effect: null
+      time_limit: 16000
+      decks:
+        - "n5"
+      deck_range: null
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n5 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 atl=16"
+      no_timeout: false
+
+    - name: "Debut Idol"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1297383002694746175
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n5"
+        - "n4"
+      deck_range: null
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n5+n4 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 effect=antiocr atl=16"
+      no_timeout: false
+
+    - name: "Major Idol"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1297383002694746176
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n4"
+        - "n3"
+      deck_range: null
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n4+n3 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 effect=antiocr atl=16"
+      no_timeout: false
+
+    - name: "Prima Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n3"
+        - "n2"
+      deck_range: null
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n3+n2 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 effect=antiocr atl=16"
+      no_timeout: false
+
+    - name: "Divine Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n2"
+        - "n1"
+      deck_range: null
+      score_limit: 1
+      max_missed: 10
+      command: "k!quiz n2+n1 1 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 effect=antiocr atl=16"
+      no_timeout: false
+
+    - name: "Eternal Idol Vocab"
+      require_role: null
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: null
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "n3"
+        - "n1"
+      deck_range: null
+      score_limit: 2
+      max_missed: 10
+      command: "k!quiz n3+n1 2 hardcore nd mmq=10 dauq=1 font=5 color=#f173ff size=100 effect=antiocr atl=16"
+      no_timeout: false
+
+    - name: "GN2"
+      require_role: null
+      combination_rank: false
+      font: null
+      font_size: null
+      rank_to_get: null
+      foreground: null
+      effect: null
+      time_limit: 30000
+      decks:
+        - "gn2"
+      deck_range: null
+      score_limit: 1
+      max_missed: 4
+      command: "k!quiz gn2 nd 1 mmq=4 atl=30"
+      no_timeout: false
+
+    - name: "GN1"
+      require_role: null
+      combination_rank: false
+      font: null
+      font_size: null
+      rank_to_get: null
+      foreground: null
+      effect: null
+      time_limit: 30000
+      decks:
+        - "gn1"
+      deck_range: null
+      score_limit: 1
+      max_missed: 4
+      command: "k!quiz gn1 nd 1 mmq=4 atl=30"
+      no_timeout: false
+
+    - name: "Prima Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN2", "Prima Idol Vocab"]
+      rank_to_get: 1297383002694746177
+      command: null
+      no_timeout: false
+
+    - name: "Divine Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN1", "Divine Idol Vocab"]
+      rank_to_get: 1297383002694746178
+      command: null
+      no_timeout: false
+
+    - name: "Eternal Idol"
+      require_role: null
+      combination_rank: true
+      decks: null
+      quizzes_required: ["GN1", "Eternal Idol Vocab"]
+      rank_to_get: 1297383002694746179
+      command: null
+      no_timeout: false
+
+    - name: "Immortal Idol"
+      require_role: 1297383002694746179
+      combination_rank: false
+      font: "Eishiikaisho"
+      font_size: 100
+      rank_to_get: 1297383002694746180
+      foreground: "#f173ff"
+      effect: "antiocr"
+      time_limit: 16000
+      decks:
+        - "haard"
+        - "insane"
+        - "jpdb50k"
+      deck_range: null
+      score_limit: 1
+      max_missed: 9
+      command: "k!quiz haard+insane+jpdb50k 1 nd hardcore dauq=1 font=5 atl=16 mmq=9 color=#f173ff size=100 effect=antiocr"
+      no_timeout: false
+
+rank_settings:
+  617136488840429598: # TMW
+    valid_levelup_channels:
+      - 640344297799024650 # Quiz
+      - 917193107571896340 # Quiz-2
+      - 1027717683199873075 # Quiz-3
+      - 1184238092853456986 # Quiz-4
+      - 1184238116740014170 # Quiz-5
+    restricted_quiz_names:
+      - "jpdb1k"
+      - "jpdb2_5k"
+      - "jpdb5k"
+      - "jpdb10k"
+      - "jpdb15k"
+      - "jpdb20k"
+      - "jpdb25k"
+    announce_channel: 617136489482027059
+  1297383002610995272: # Test_Guild
+    valid_levelup_channels:
+      - 1297383004817330210 # Quiz
+      - 1297383004817330211 # Quiz-2
+      - 1297383004817330212 # Quiz-3
+      - 1297383004817330213 # Quiz-4
+      - 1297383004817330214 # Quiz-5
+    restricted_quiz_names:
+      - "n5"
+      - "n4"
+      - "n3"
+      - "n2"
+      - "n1"
+    announce_channel: 1297383003479081019
